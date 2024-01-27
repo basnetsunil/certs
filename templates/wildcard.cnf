@@ -1,0 +1,11 @@
+[req]
+req_extensions = req_ext
+distinguished_name = dn
+[ dn ]
+CN = monitoring.tools.pci.tsys.aws
+[ req_ext ]
+basicConstraints=CA:FALSE
+subjectAltName = @alt_names
+[ alt_names ]
+DNS.1 = monitoring.tools.pci.tsys.aws
+DNS.2 = *.monitoring.tools.pci.tsys.aws

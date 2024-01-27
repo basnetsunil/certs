@@ -1,0 +1,9 @@
+[req]
+req_extensions = req_ext
+distinguished_name = dn
+[ dn ]
+CN = cn_name
+[ req_ext ]
+basicConstraints=CA:FALSE
+subjectAltName = @alt_names
+[ alt_names ]
