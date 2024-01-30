@@ -14,6 +14,7 @@ sed -e 's/cn_name/'$cn_name'/g' dnstemp.cnf > pre_sslconf.cnf
 echo "Removing whitespaces\blank lines from file...."
 echo ""
 #remove blank lines from the file
+echo "$list" > list.txt
 cat list.txt | sed -e '/^$/d' > input1.txt
 #remove blank spaces from the file
 sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//' input1.txt > input.txt
